@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Type Definitions for Splatnet2 API.",
     "main": "index.js",
+    "types": "src/bundle.d.ts",
     "dependencies": {},
     "devDependencies": {
         "@typescript-eslint/parser": "^4.8.1",
@@ -15,6 +16,7 @@
         "typescript": "next"
     },
     "scripts": {
+        "build": "node bundle",
         "lint": "eslint --ext .js,.ts src/",
         "lint:fix": "eslint --fix --ext .js,.ts src/"
     },
