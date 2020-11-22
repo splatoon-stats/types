@@ -1,16 +1,40 @@
-// Enum-like types
-export type RegionCode = 'ALL' | 'JP' | 'US' | 'EU';
-
-export type RankedRuleKeys = 'clam_blitz' | 'rainmaker' | 'splat_zones' | 'tower_control';
+import { RankedRuleKey } from './enum';
 
 // Miscellaneous types
+export interface Gear {
+    brand: GearBrand;
+    id: string;
+    image: string;
+    kind: 'head' | 'clothes' | 'shoes';
+    name: string;
+    rarity: 0 | 1 | 2;
+    thumbnail: string;
+}
+
+export interface GearSkill {
+    id: string;
+    image: string;
+    name: string;
+}
+export interface GearSkills {
+    main: GearSkill;
+    subs: [GearSkill, GearSkill | null, GearSkill | null];
+}
+
+export interface GearBrand {
+    frequent_skill?: GearSkill;
+    id: string;
+    image: string;
+    name: string;
+}
+
 export interface KeyedValue {
     key: string;
     name: string;
 }
 
 export interface Rule extends KeyedValue {
-    key: RankedRuleKeys;
+    key: RankedRuleKey;
     multiline_name: string;
 }
 
