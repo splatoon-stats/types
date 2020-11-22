@@ -1,6 +1,7 @@
 // https://app.splatoon2.nintendo.net/api/league_match_ranking/20010106T/ALL
 
-import { RegionCode, Weapon } from './common';
+import { Weapon } from './common';
+import { RegionCode } from './enum';
 
 export type LeagueTypeKey = 'team' | 'pair';
 

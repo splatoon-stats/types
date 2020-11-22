@@ -1,4 +1,4 @@
-import { Gear, GearSkills, KeyedValue, Weapon } from './common';
+import { Gear, GearSkills, KeyedValue, Rule, Stage, Weapon } from './common';
 import { GameModeKey } from './enum';
 
 interface TeamResult extends KeyedValue {
@@ -57,18 +57,6 @@ export interface TeamMember {
 
 export interface GameMode extends KeyedValue {
     key: GameModeKey;
-}
-
-export interface Stage {
-    id: string;
-    image: string;
-    name: string;
-}
-
-export interface Rule {
-    key: string;
-    multiline_name: string;
-    name: string;
 }
 
 export interface BaseResult {

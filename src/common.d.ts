@@ -1,6 +1,23 @@
-import { RankedRuleKey } from './enum';
+import { RuleKey } from './enum';
 
 // Miscellaneous types
+export interface Stage {
+    id: string;
+    image: string;
+    name: string;
+}
+
+export interface KeyedValue {
+    key: string;
+    name: string;
+}
+
+export interface Rule extends KeyedValue {
+    key: RuleKey;
+    multiline_name: string;
+}
+
+// Gear related types
 export interface Gear {
     brand: GearBrand;
     id: string;
@@ -26,16 +43,6 @@ export interface GearBrand {
     id: string;
     image: string;
     name: string;
-}
-
-export interface KeyedValue {
-    key: string;
-    name: string;
-}
-
-export interface Rule extends KeyedValue {
-    key: RankedRuleKey;
-    multiline_name: string;
 }
 
 // Weapon types
