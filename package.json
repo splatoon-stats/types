@@ -2,7 +2,6 @@
     "name": "@splatoon-stats/types",
     "version": "1.0.0",
     "description": "Type Definitions for Splatnet2 API.",
-    "main": "index.js",
     "types": "src/bundle.d.ts",
     "devDependencies": {
         "@typescript-eslint/parser": "^4.8.1",
@@ -41,5 +40,8 @@
             "prettier --write",
             "npm run lint:fix"
         ]
-    }
+    },
+    "files": [
+        "src/"
+    ]
 }
