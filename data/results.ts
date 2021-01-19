@@ -1,5 +1,6 @@
 import { Results } from '../src/results';
 
+// https://app.splatoon2.nintendo.net/api/results
 const response: Results = {
     unique_id: '5796695674674451293',
     results: [

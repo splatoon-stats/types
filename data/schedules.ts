@@ -1,5 +1,6 @@
 import { Schedules } from '../src/schedules';
 
+// https://app.splatoon2.nintendo.net/api/schedules
 const response: Schedules = {
     gachi: [
         {

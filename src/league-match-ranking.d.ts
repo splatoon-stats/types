@@ -1,5 +1,3 @@
-// https://app.splatoon2.nintendo.net/api/league_match_ranking/20010106T/ALL
-
 import { Weapon } from './common';
 import { RegionCode } from './enum';
 
