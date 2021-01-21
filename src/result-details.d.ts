@@ -1,5 +1,6 @@
 import { Gear, GearSkills, KeyedValue, Rule, Stage, Weapon } from './common';
 import { GameModeKey } from './enum';
+import { Nullable } from './index';
 
 interface TeamResult extends KeyedValue {
     key: 'defeat' | 'victory';

@@ -1,4 +1,5 @@
 import { Rule, Weapon } from './common';
+import { Nullable } from './index';
 
 export type RankChange = Nullable<'remain' | 'up' | 'down'>;
 
