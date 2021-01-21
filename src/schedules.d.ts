@@ -10,11 +10,7 @@ export interface Schedule {
     id: number;
     rule: Rule;
     stage_a: Stage;
-    stage_b: {
-        id: string;
-        image: string;
-        name: string;
-    };
+    stage_b: Stage;
     start_time: number;
 }
 
