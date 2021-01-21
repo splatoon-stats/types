@@ -1,6 +1,6 @@
 {
     "name": "@splatoon-stats/types",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Type Definitions for Splatnet2 API.",
     "types": "src/bundle.d.ts",
     "devDependencies": {
